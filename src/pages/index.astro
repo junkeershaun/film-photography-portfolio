@@ -1,0 +1,158 @@
+---
+// Astro component for the personal website
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Film photography portfolio showcasing analog photography, 35mm film work, and darkroom prints">
+    <meta name="keywords" content="film photography, analog photography, 35mm, medium format, darkroom, portfolio">
+    <meta name="author" content="Your Name">
+    <title>Your Name - Film Photography</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <!-- Skip to main content link for keyboard users -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">Your Name</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Film Photography</h1>
+                <p class="hero-subtitle">Capturing moments on analog film</p>
+                <a href="#portfolio" class="cta-button">View Gallery</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About My Work</h2>
+                <div class="about-content">
+                    <img src="/images/profile.webp" alt="Canon AE-1 vintage film camera with 50mm lens" class="profile-image" loading="lazy">
+                    <div class="about-text">
+                        <p>I'm a film photographer dedicated to the art of analog photography. Working primarily with 35mm and medium format film, I capture the world through the timeless medium of celluloid.</p>
+                        <p>My work explores the beauty of grain, the depth of shadows, and the authenticity that only film can provide. Each photograph is carefully composed, shot on film, and developed by hand in the darkroom.</p>
+                        <p>Cameras: Canon AE-1, Pentax K1000, Mamiya RB67 | Film stocks: Kodak Tri-X, Portra 400, Ilford HP5</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">Gallery</h2>
+                <div class="portfolio-grid">
+                    <article class="portfolio-item" tabindex="0" role="button" aria-label="View details for Street Photography">
+                        <img src="/images/project1.jpg" alt="Urban street scene framed by trees with stairs leading to city street at dusk" class="portfolio-image" loading="lazy">
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Urban Moments</h3>
+                            <p class="portfolio-description">Street photography captured on Kodak Tri-X 400. Raw, unfiltered city life.</p>
+                            <a href="#" class="portfolio-link">View Series</a>
+                        </div>
+                    </article>
+                    <article class="portfolio-item" tabindex="0" role="button" aria-label="View details for Portrait Series">
+                        <img src="/images/project2.jpg" alt="Film portrait photography" class="portfolio-image" loading="lazy">
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Portraits on Film</h3>
+                            <p class="portfolio-description">Intimate portraits shot on Kodak Portra 400. Natural light and authentic emotion.</p>
+                            <a href="#" class="portfolio-link">View Series</a>
+                        </div>
+                    </article>
+                    <article class="portfolio-item" tabindex="0" role="button" aria-label="View details for Landscape Photography">
+                        <img src="/images/project3.jpg" alt="Black and white photograph of Golden Pavilion temple reflected in pond with pine tree" class="portfolio-image" loading="lazy">
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title">Landscapes</h3>
+                            <p class="portfolio-description">Medium format landscapes on Ilford HP5. Capturing the vastness of nature.</p>
+                            <a href="#" class="portfolio-link">View Series</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Interested in prints, collaborations, or just want to chat about film photography?"></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p>Email: <a href="mailto:photo@example.com">photo@example.com</a></p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram profile">Instagram</a>
+                        <a href="#" aria-label="Flickr profile">Flickr</a>
+                        <a href="#" aria-label="VSCO profile">VSCO</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
+                <a href="#" aria-label="GitHub profile">GitHub</a>
+                <a href="#" aria-label="Twitter profile">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modal -->
+    <div id="portfolio-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <article class="modal-article">
+                <img src="" alt="Project detail image" class="modal-image" id="modal-image" loading="lazy">
+                <div class="modal-body">
+                    <h2 class="modal-title" id="modal-title"></h2>
+                    <p class="modal-description" id="modal-description"></p>
+                    <div class="modal-details" id="modal-details"></div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <script src="/scripts/navigation.js"></script>
+    <script src="/scripts/form-validation.js"></script>
+    <script src="/scripts/portfolio.js"></script>
+</body>
+</html>
